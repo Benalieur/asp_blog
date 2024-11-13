@@ -1,0 +1,39 @@
+# Ignorer les fichiers compilés
+bin/
+obj/
+
+# Ignorer les logs
+*.log
+
+# Ignorer les fichiers de débogage
+*.pdb
+*.mdb
+
+# Ignorer les fichiers de configuration utilisateur de Visual Studio
+.vs/
+.vscode/
+*.user
+*.suo
+*.csproj.user
+*.sln.docstates
+
+# Ignorer les secrets utilisateur et les fichiers temporaires
+Secrets/
+secrets.json
+
+# Ignorer les dossiers des packages
+packages/
+node_modules/
+
+# Ignorer les fichiers de cache de NuGet
+*.nupkg
+project.lock.json
+
+# Ignorer les fichiers de configuration locaux
+Properties/launchSettings.json
+
+# Ignorer les dossiers de publication
+wwwroot/
+publish/
+
+*.db

@@ -1,0 +1,9 @@
+@model asp_blog_app.Models.BlogPost
+
+<h1>@Model.Title</h1>
+<p>Par @Model.Author le @Model.CreatedAt.ToShortDateString()</p>
+<div>
+    @Model.Content
+</div>
+
+<a href="/Blog">Retour à la liste</a>

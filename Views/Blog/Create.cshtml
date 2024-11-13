@@ -1,0 +1,22 @@
+@model asp_blog_app.Models.BlogPost
+
+<h1>Créer un nouvel article</h1>
+
+<form asp-action="Create" method="post" class="p-3 border rounded shadow-sm">
+    <div class="mb-3">
+        <label for="Title" class="form-label">Titre</label>
+        <input id="Title" name="Title" asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label for="Content" class="form-label">Contenu</label>
+        <textarea id="Content" name="Content" asp-for="Content" class="form-control"></textarea>
+        <span asp-validation-for="Content" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label for="Author" class="form-label">Auteur</label>
+        <input id="Author" name="Author" asp-for="Author" class="form-control" />
+        <span asp-validation-for="Author" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Créer</button>
+</form>
